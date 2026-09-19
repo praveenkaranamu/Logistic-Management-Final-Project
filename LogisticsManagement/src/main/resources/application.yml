@@ -1,0 +1,27 @@
+spring:
+  application:
+    name: LogisticsManagement
+
+  profiles:
+    active: dev
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: health,info,metrics,env,beans,mappings
+
+  endpoint:
+    health:
+      show-details: always
+
+  info:
+    env:
+      enabled: true
+
+info:
+  app:
+    name: Logistics Management
+    description: Logistics Management System
+    version: 1.0.0
+    developer: Praveen
